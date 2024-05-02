@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorteador</title>
+</head>
+<body>
+    <figcaption> <img src="./assets/sort 1.png " alt="sorteador"></figcaption>
+
+    <div>
+        <p>sortear um numero</p>
+        <input type="number" class="min-input" placeholder="entre">
+        <input type="number" class="max-input" placeholder="e">
+        <br>
+        <button>enviar</button>
+    </div>
+
+    <div class="resultadohehe">
+        <h1 class="resultado"> </h1>
+
+    </div>
+   
+   
+ 
+    
+
+
+    
+</body>
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    img{
+        margin: 0 auto;
+        display: block;
+        margin-top: 30px;
+    }
+
+    div{
+        text-align: center;
+        margin-top: 20px;
+       
+    }
+    P{
+        color: aliceblue;
+        font-size: 32px;
+        line-height: 37px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    button{
+        background: #AEC346;
+        width: 342px;
+        height: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: aliceblue;
+        font: 400;
+        font-size: 30px;
+
+    
+
+    }
+
+ 
+    input{
+        width: 342px;
+        height: 50px;
+        border-radius: 14px;
+        border: 1px;
+        background: #ffffff 25%;
+        padding-left: 10px;
+        opacity: .3;
+        margin-right: 10px;
+        cursor: pointer;
+        
+    }
+
+    h1{
+        display: block;
+        font-size: 90px;
+        color: #ffffff;
+        text-align: center;
+       
+        }
+
+
+
+
+        
+        @media screen and (max-width: 524px) {
+
+            img{
+                width: 200px;
+                margin-top: 0;
+            }
+
+            button{
+                width: 200px;
+            }
+
+            input{
+                 width: auto;
+                 margin-bottom: 20px;
+            }
+
+
+
+
+ 
+  }
+
+
+    
+  
+
+
+   
+
+
+
+</style>
+
+        <script>
+            const botao = document.querySelector('button')
+        
+
+
+
+          
+        function sorteando(){
+
+
+
+
+
+                const resultadoinput = document.querySelector('.resultado')
+
+                const mini = Math.ceil(document.querySelector('.min-input').value)
+                const maxi = Math.floor(document.querySelector('.max-input').value)
+
+                const result = Math.floor (Math.random() * (maxi - mini + 1)) + mini; 
+
+
+
+
+                if(mini <= maxi){
+
+                    resultadoinput.textContent = result
+
+                }else{
+                    alert('o valor maximo precisa ser maior ou igual o valor minimo')
+
+
+
+                }
+
+               
+
+
+              
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+              
+            botao.addEventListener('click', sorteando)
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        </script>
+</html>
