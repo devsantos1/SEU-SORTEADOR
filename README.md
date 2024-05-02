@@ -10,5 +10,7 @@ USAMOS math()radom para buscar um numero aleatorio entre dois numeros. e pegando
 -CSS
 -JAVASCRIPT
 
+<p>por ser uma aplicacao pequena, optei por colocar os estilos   e o codigo no arquivo index.html</p>
+
 
 
